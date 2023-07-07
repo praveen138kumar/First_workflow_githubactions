@@ -1,0 +1,15 @@
+name: multiple_shell_executors
+on: [push]
+jobs:
+  multiple_shell_executors:
+    runs-on: ubuntu-latest
+    steps:
+      - name: shell_script 
+        run: |
+          apt install vim
+          vim --v
+      - name: python_script
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python        
