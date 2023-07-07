@@ -18,7 +18,7 @@ jobs:
     needs: ["multiple_shell_executors"]
     steps:
       - name: windows_script
-        run: get-locatio
+        run: Get-Location
       - name: working_directory
         run: pwd
         shell: bash  
