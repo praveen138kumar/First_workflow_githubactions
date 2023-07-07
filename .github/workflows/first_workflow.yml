@@ -3,7 +3,7 @@ name: shell_comands
 on: [push,pull_request ]
 
 jobs:
-  run-shell-comm    and: #name of the job
+  run-shell-command: #name of the job
     runs-on: ubuntu-latest  #os or the base image on which the job should run
     steps:
       - name: first step
