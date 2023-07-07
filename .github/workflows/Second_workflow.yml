@@ -14,10 +14,10 @@ jobs:
           print(platform.processor())
         shell: python 
   multiple_shell_windows:
-    runs-on: window-latest
+    runs-on: windows-latest
     needs: ["multiple_shell_executors"]
     steps:
-      - name: windows_script
+      - name: Directory PowerShell
         run: Get-Location
       - name: working_directory
         run: pwd
