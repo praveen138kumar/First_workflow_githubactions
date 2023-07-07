@@ -12,4 +12,13 @@ jobs:
         run: |
           import platform
           print(platform.processor())
-        shell: python        
+        shell: python 
+  multiple_shell_windows:
+    runs-on: window-latest
+    needs: ["multiple_shell_executors"]
+    steps:
+      - name: windows_script
+        run: get-locatio
+      - name: working_directory
+        run: pwd
+        shell: bash  
