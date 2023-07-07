@@ -7,7 +7,7 @@ jobs:
       - name: shell_script 
         run: |
           sudo apt install vim
-          vim --v
+          vim -v
       - name: python_script
         run: |
           import platform
